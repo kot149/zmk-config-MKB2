@@ -687,11 +687,11 @@
 
         DEFAULT {
             bindings = <
-&eager_tap_dance LANGUAGE_2 1 &mt LWIN Q                        &kp W             &kp E         &kp R                          &lt 13 T                                                                      &lt 13 Y                 &kp U  &kp I                   &kp O                &lt 11 P &none
-&kp LCTRL &mt LCTRL A                       &kp S             &kp D         &kp F                          &kp G                               &kp H                    &kp J  &kp K                   &kp L                &lt 12 MINUS &none
-&kp LSHFT &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C         &kp V                          &kp B                               &kp N                    &kp M  &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH &none
-&kp LCTRL                         &kp LEFT_WIN      &kp LEFT_ALT   &lt_exit_alttab 3 SPACE  &lt_exit_alttab 4 TAB      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                                          &none            &lt 12 ESCAPE &none
-&kp RIGHT  &kp DOWN  &kp UP_ARROW  &kp LEFT_ARROW  &none  &kp PG_UP  &kp DELETE  &kp BACKSPACE  &kp PG_DN  &none
+&none &mt LWIN Q                        &kp W             &kp E         &kp R                          &lt 13 T                                                                      &lt 13 Y                 &kp U  &kp I                   &kp O                &lt 11 P &none
+&none               &kp S             &kp D         &kp F                          &kp G                               &kp H                    &kp J  &kp K                   &kp L                &lt 12 MINUS &none
+&none &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C         &kp V                          &kp B                               &kp N                    &kp M  &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH &none
+&kp LCTRL &kp LEFT_WIN        &kp LALT      &lt_exit_alttab 3 SPACE  &lt_exit_alttab 4 TAB      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                                          &kp LALT            &lt 12 ESCAPE &none
+&kp DELETE  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSPACE  &none  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_ARROW  &kp DOWN_ARROW  &none
             >;
         };
 
@@ -822,9 +822,9 @@
         CONFIGURATION {
             bindings = <
 &none &bootloader  &sys_reset  &none  &none  &tog_ls             &none         &none         &out OUT_TOG  &sys_reset    &bootloader     &none
-&none &none        &none       &none  &none  &tog_ls_on          &ind_con      &ind_bat      &none         &none         &windows_sleep  &none
+&none &none        &none       &none  &none  &tog_ls_on          &ind_con      &ind_bat      &none         &windows_sleep  &none         &none
 &none &none        &none       &none  &none  &tog_ls_off         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &td_bt_clear
-&none &none        &none       &none  &none  &none               &none         &none         &none         &none         &td_bt_clear_all &none
+&none &none        &none              &none  &none               &none         &none                       &none         &td_bt_clear_all &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
