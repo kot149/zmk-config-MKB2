@@ -245,6 +245,13 @@
             layers = <0>;
             require-prior-idle-ms = <400>;
         };
+
+        Ctrl_Z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <25 26>;
+            layers = <0>;
+            require-prior-idle-ms = <400>;
+        };
     };
 
     macros {
