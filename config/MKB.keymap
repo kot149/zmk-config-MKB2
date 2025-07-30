@@ -691,7 +691,7 @@
 &kp LCTRL &mt LCTRL A                       &kp S             &kp D         &kp F                          &kp G                               &kp H                    &kp J  &kp K                   &kp L                &lt 12 MINUS &none
 &kp LSHFT &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C         &kp V                          &kp B                               &kp N                    &kp M  &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH &none
 &kp LCTRL                         &kp LEFT_WIN      &kp LEFT_ALT   &lt_exit_alttab 3 SPACE  &lt_exit_alttab 4 TAB      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                                          &none            &lt 12 ESCAPE &none
-&kp LEFT &kp UP &none &kp DOWN &kp RIGHT &kp HOME &kp PG_UP &none &kp PG_DN &kp END
+&kp RIGHT  &kp DOWN  &kp UP_ARROW  &kp LEFT_ARROW  &none  &kp PG_UP  &kp END  &kp HOME  &kp PG_DN  &none
             >;
         };
 
@@ -701,6 +701,7 @@
 &trans &trans  &trans  &trans  &trans                                        &trans   &trans  &trans  &trans  &trans  &trans &none
 &trans &trans  &trans  &trans  &trans                                        &trans   &trans  &trans  &trans  &trans  &trans &none
 &trans  &trans  &trans    &trans  &trans      &trans  &trans                       &trans   &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -710,6 +711,7 @@
 &trans &mt LEFT_CONTROL ASTERISK  &kp N4              &kp N5               &kp N6  &kp SLASH         &kp F5        &kp HOME      &kp UP_ARROW  &kp END      &to_kp 6 TAB &none
 &trans &mt LEFT_SHIFT N0          &kp N1              &kp N2               &kp N3  &kp PERCENT       &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT    &kp LC(RIGHT) &none
 &mt LCTRL COMMA            &mt LEFT_WIN COMMA  &mt LEFT_ALT PERIOD    &kp ENTER    &trans         &kp DELETE  &trans               &trans   &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -721,6 +723,7 @@
 &trans &to_kp 6 TAB  &kp F6        &kp F7        &kp F8   &kp F5           &kp HASH          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE   &kp TILDE &none
 &trans &trans        &kp F9        &kp F10       &kp F11  &kp F12          &kp AMPERSAND     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &kp PIPE &none
 &kp LCTRL     &kp LEFT_WIN  &kp LEFT_ALT     &trans      &trans      &kp LESS_THAN  &kp GREATER_THAN                                                    &trans              &kp DOLLAR &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -730,6 +733,7 @@
 &trans &to_kp 6 TAB          &kp LG(LS(LEFT_ARROW))  &kp LG(UP_ARROW)  &kp LG(LS(RIGHT_ARROW))  &kp F5                         &kp F5      &kp_exit_AML LC(PAGE_UP)  &kp_exit_AML UP_ARROW  &kp LC(PAGE_DOWN)  &to_kp 6 TAB &none
 &trans &kp LA(LC(LG(DOWN)))  &kp LG(LEFT_ARROW)      &kp LG(DOWN)      &kp LG(RIGHT_ARROW)      &screenshot_copy    &kp K_MUTE  &kp LA(LEFT)              &kp DOWN               &kp LA(RIGHT)      &trans &none
 &trans                &trans                  &trans                               &trans            &trans               &kp DELETE                  &trans                                                                &trans   &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -741,6 +745,7 @@
 &kp LS(TAB) &kp LS(TAB)  &trans  &kp UP  &trans  &trans    &trans  &trans  &kp UP  &trans  &kp LS(TAB) &kp LS(TAB)
 &trans &trans       &kp LEFT      &kp DOWN  &kp RIGHT  &trans  &trans  &kp LEFT      &kp DOWN      &kp RIGHT  &trans &none
 &trans       &trans  &trans  &trans    &trans      &trans  &trans                          &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -750,6 +755,7 @@
 &kp TAB     &kp TAB      &trans  &kp UP  &trans  &trans    &trans  &trans  &kp UP  &trans  &kp TAB &kp TAB
 &kp LS(TAB) &kp LS(TAB)  &kp LEFT      &kp DOWN      &kp RIGHT  &trans    &trans  &kp LEFT      &kp DOWN      &kp RIGHT  &kp LS(TAB) &kp LS(TAB)
 &trans       &trans  &trans  &trans  &trans       &trans  &trans                          &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -759,6 +765,7 @@
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
 &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -768,6 +775,7 @@
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
 &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -777,6 +785,7 @@
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
 &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -786,6 +795,7 @@
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB1  &td_right_click  &mouse_gesture  &mo 12 &none
 &trans &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans           &trans  &trans &none
 &trans  &trans  &trans  &trans  &trans       &trans  &trans                                     &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -795,6 +805,7 @@
 &trans &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN  &kp C_MUTE         &kp C_VOLUME_UP  &trans  &trans &none
 &trans &trans  &trans  &trans  &trans  &trans    &trans             &kp LS(LA(LC(M)))  &trans           &trans  &trans &none
 &trans  &trans  &trans  &trans  &trans       &trans  &trans                                                         &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -804,6 +815,7 @@
 &trans &trans  &trans  &trans  &trans                          &trans    &kp F17  &kp F18  &kp F19  &kp F20  &trans &none
 &trans &trans  &trans  &trans  &trans                          &trans    &kp F21  &kp F22  &kp F23  &kp F24  &trans &none
 &trans  &trans  &trans    &trans  &trans      &trans  &trans                             &trans   &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -813,6 +825,7 @@
 &none &none        &none       &none  &none  &tog_ls_on         &ind_con      &ind_bat      &none         &none         &windows_sleep  &none &none  &none
 &none &none        &none       &none  &none  &tog_ls_off         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &td_bt_clear &none  &none
 &none        &none       &none  &none  &none        &none       &none         &none                                                     &td_bt_clear_all &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
