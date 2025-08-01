@@ -66,9 +66,7 @@
 
 &zip_mouse_gesture {
     stroke-size = <150>;
-    movement-threshold = <10>;
-    // enable-eager-mode;
-    idle-timeout-ms = <150>;
+    enable-eager-mode;
 
     history_back {
         pattern = <GESTURE_RIGHT>;
