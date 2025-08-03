@@ -696,7 +696,7 @@
 &none &mt LCTRL A           &kp S             &kp D         &kp F                          &kp G                               &kp H                    &kp J  &kp K                   &kp L                &lt 12 MINUS &none
 &none &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C         &kp V                          &kp B                               &kp N                    &kp M  &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH &none
 &kp LCTRL &kp LEFT_WIN        &kp LALT      &lt_exit_alttab 3 SPACE  &lt_exit_alttab 4 TAB      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                                          &kp LALT            &lt 12 ESCAPE &none
-&kp DELETE  &kp LANG2  &kp LANG1  &kp BACKSPACE  &none  &kp UP_ARROW  &kp RIGHT  &kp LEFT  &kp DOWN  &none
+&kp DELETE  &kp LANG2  &kp LANG1  &kp BACKSPACE  &none  &to_kp 5 TAB  &kp LG(LC(RIGHT))  &kp LG(LC(LEFT))  &kp DOWN  &none
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
         };
@@ -751,7 +751,7 @@
 &kp LS(TAB) &kp LS(TAB)  &trans  &kp UP  &trans  &trans    &trans  &trans  &kp UP  &trans  &kp LS(TAB) &kp LS(TAB)
 &trans &trans       &kp LEFT      &kp DOWN  &kp RIGHT  &trans  &trans  &kp LEFT      &kp DOWN      &kp RIGHT  &trans &none
 &trans       &trans  &trans  &trans    &trans      &trans  &trans                          &trans &trans &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp UP  &kp RIGHT  &kp LEFT  &kp_to ENTER 0  &kp_to ENTER 0
             >;
         };
 
