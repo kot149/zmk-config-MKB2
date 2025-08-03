@@ -52,9 +52,9 @@ layers:
   - LANG1
   - BACKSPACE
   - ''
-  - UP ARROW
-  - RIGHT
-  - LEFT
+  - '&to_kp 5 TAB'
+  - Gui+Ctl+RIGHT
+  - Gui+Ctl+LEFT
   - DOWN
   - ''
   '1':
@@ -337,11 +337,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP
+  - RIGHT
+  - LEFT
+  - '&kp_to ENTER 0'
+  - '&kp_to ENTER 0'
   '6':
   - Sft+TAB
   - Sft+TAB
