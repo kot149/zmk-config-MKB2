@@ -47,16 +47,16 @@ layers:
   - LALT
   - {t: ESCAPE, h: '12'}
   - ''
-  - DELETE
+  - Sft+TAB
   - LANG2
   - LANG1
-  - BACKSPACE
-  - ''
+  - LANG1
+  - TAB
+  - Ctl+Gui+LEFT
   - '&to_kp 5 TAB'
-  - Gui+Ctl+RIGHT
-  - Gui+Ctl+LEFT
-  - DOWN
   - ''
+  - DOWN
+  - Ctl+Gui+RIGHT
   '1':
   - '&eager_tap_dance LANG1 1'
   - {t: ▽, type: trans}
@@ -337,11 +337,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
-  - RIGHT
   - LEFT
+  - UP
   - '&kp_to ENTER 0'
   - '&kp_to ENTER 0'
+  - RIGHT
   '6':
   - Sft+TAB
   - Sft+TAB
