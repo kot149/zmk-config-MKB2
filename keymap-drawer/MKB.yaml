@@ -149,29 +149,22 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - Ctl+RIGHT
-  - ''
-  - {t: COMMA, h: LCTRL}
-  - {t: COMMA, h: LEFT WIN}
-  - {t: PERIOD, h: LEFT ALT}
+  - RIGHT
+  - DOWN
+  - UP
+  - LEFT
   - ENTER
-  - {t: ▽, type: trans}
-  - DELETE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '3':
+  - PG UP
+  - END
+  - HOME
+  - PG DN
+  - ENTER
+  Fnc:
+  - GRAVE
+  - PG UP
+  - UP
+  - PG DN
+  - HOME
   - {t: ▽, type: trans}
   - '&to_kp 5 TAB'
   - F1
@@ -254,82 +247,28 @@ layers:
   - '&to_kp 6 TAB'
   - ''
   - {t: ▽, type: trans}
-  - Alt+Ctl+Gui+DOWN
-  - Gui+LEFT ARROW
-  - Gui+DOWN
-  - Gui+RIGHT ARROW
-  - {t: Alt+PRINTSCREEN, s: Alt+PRINTSCREEN}
-  - MUTE
-  - Alt+LEFT
-  - DOWN
-  - Alt+RIGHT
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DELETE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '5':
-  - TAB
-  - TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - TAB
-  - TAB
-  - Sft+TAB
-  - Sft+TAB
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - Sft+TAB
-  - Sft+TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT
   - DOWN
-  - RIGHT
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP
+  - LEFT
+  - ENTER
+  - PG UP
+  - END
+  - HOME
+  - PG DN
+  - ENTER
+  Num:
+  - CAPS
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -363,22 +302,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - RIGHT
+  - DOWN
   - UP
-  - {t: ▽, type: trans}
-  - TAB
-  - TAB
-  - Sft+TAB
-  - Sft+TAB
   - LEFT
-  - DOWN
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - Sft+TAB
-  - Sft+TAB
+  - ENTER
+  - PG UP
+  - END
+  - HOME
+  - PG DN
+  - ENTER
+  Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -492,7 +426,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - RIGHT
+  - DOWN
+  - UP
+  - LEFT
+  - ENTER
+  - PG UP
+  - END
+  - HOME
+  - PG DN
+  - ENTER
+  Scr:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -627,8 +571,24 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '11':
-  - {t: ▽, type: trans}
+  - RIGHT
+  - DOWN
+  - UP
+  - LEFT
+  - ENTER
+  - PG UP
+  - END
+  - HOME
+  - PG DN
+  - ENTER
+  BT:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -741,88 +701,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '13':
-  - ''
-  - Boot
-  - Reset
-  - ''
-  - ''
-  - {t: '&tog_ls', type: held}
-  - ''
-  - ''
-  - OUT TOG
-  - Reset
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&tog_ls_on'
-  - '&ind_con'
-  - '&ind_bat'
-  - ''
-  - '&windows_sleep'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&tog_ls_off'
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - '&td_bt_clear'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&td_bt_clear_all'
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-combos:
-- p: [1, 2]
-  k: EQUAL
-  l: ['2']
-- p: [14, 13]
-  k: CARET
-  l: ['2']
-- p: [19, 20]
-  k: '&mkp MCLK'
-  l: ['10']
-- p: [20, 21]
-  k: '&mkp_with_mod LEFT_SHIFT MCLK'
-  l: ['10']
-- p: [1, 2]
-  k: ESCAPE
-  l: ['0']
-- p: [25, 34]
-  k: Caps Word
-  l: ['0']
-- p: [33, 34]
-  k: BACKSLASH
-  l: ['0']
-- p: [14, 13]
-  k: Ctl+A
-  l: ['0']
-- p: [25, 26]
-  k: Ctl+Z
-  l: ['0']
+  - RIGHT
+  - DOWN
+  - UP
+  - LEFT
+  - ENTER
+  - PG UP
+  - END
+  - HOME
+  - PG DN
+  - ENTER
