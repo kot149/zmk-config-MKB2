@@ -737,7 +737,7 @@
 &trans           &kp PLUS                   &kp N7               &kp N8  &kp N9     &kp MINUS        &td_alt_f4    &kp LC(HOME)  &trans        &kp LC(END)  &to_kp 5 TAB   &none
 &trans           &mt LEFT_CONTROL ASTERISK  &kp N4               &kp N5  &kp N6     &kp SLASH        &kp F5        &kp HOME      &kp UP_ARROW  &kp END      &to_kp 6 TAB   &none
 &trans           &mt LEFT_SHIFT N0          &kp N1               &kp N2  &kp N3     &kp PERCENT      &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT    &kp LC(RIGHT)  &none
-&mt LCTRL COMMA  &mt LEFT_WIN COMMA         &mt LEFT_ALT PERIOD          &trans     &kp ENTE         &kp DELETE    &trans                      &trans       &trans         &trans
+&mt LCTRL COMMA  &mt LEFT_WIN COMMA         &mt LEFT_ALT PERIOD          &trans     &kp ENTER         &kp DELETE    &trans                      &trans       &trans         &trans
 &trans           &trans                     &trans               &trans  &trans                                    &trans        &trans        &trans       &trans         &trans
             >;
 
