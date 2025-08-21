@@ -712,10 +712,10 @@
 
         DEFAULT {
             bindings = <
-&none        &mt LWIN Q                        &mt LALT W             &kp E      &kp R                    &lt 13 T                   &lt 13 Y                     &kp U                    &kp I                   &kp O                &lt 11 P              &none
-&none        &mt LCTRL A                       &kp S             &kp D      &kp F                    &kp G                      &kp H                        &kp J                    &kp K                   &kp L                &lt 12 MINUS          &none
-&none        &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C      &kp V                    &kp B                      &kp N                        &kp M                    &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH  &none
-&kp LCTRL    &kp LEFT_WIN                      &kp LALT                     &lt_eager_tap_dance_lang1 3 LANG2  &lt_exit_alttab 4 SPACE      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                          &kp LALT             &lt 12 ESCAPE         &none
+&none    &mt LWIN Q                        &mt LALT W        &kp E      &kp R                    &lt 13 T                   &lt 13 Y                     &kp U                    &kp I                   &kp O                &lt 11 P              &none
+&none    &mt LCTRL A                       &kp S             &kp D      &kp F                    &kp G                      &kp H                        &kp J                    &kp K                   &kp L                &lt 12 MINUS          &none
+&none    &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C      &kp V                    &kp B                      &kp N                        &kp M                    &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH  &none
+&none    &kp LCTRL                         &kp LWIN                     &lt_eager_tap_dance_lang1 3 LANG2  &lt_exit_alttab 4 SPACE      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                          &kp LALT             &lt 12 ESCAPE         &none
 &kp LS(TAB)  &kp LANG2                         &kp LANG1         &kp LANG1  &kp TAB                                                                          &kp LC(LG(LEFT))         &to_kp 5 TAB            &none                &kp DOWN              &kp LC(LG(RIGHT))
             >;
 
