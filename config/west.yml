@@ -14,6 +14,8 @@ manifest:
       url-base: https://github.com/kot149
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -89,6 +91,19 @@ manifest:
       remote: kot149
       revision: v1
       path: modules/zmk-scroll-snap
+
+    - name: zmk-input-processor-keybind
+      remote: te9no
+      revision: main
+      path: modules/zmk-input-processor-keybind-te9no
+    - name: cirque-input-module
+      remote: petejohanson
+      revision: main
+      path: modules/cirque-input-module
+    - name: zmk-driver-MLX90393
+      remote: te9no
+      revision: main
+      path: modules/zmk-driver-MLX90393
 
   self:
     path: config

@@ -1,22 +1,25 @@
-#include "MKB_R_Base.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/keys.h>
+#include "MKB_R_Base.dtsi"
 
 &adc {
 	status = "okay";
 };
 
-/ {
-   right_encoder: encoder_right {
-      compatible = "alps,ec11";
-      a-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-      b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-      steps = <2>;
-      status = "disabled";
-   };
+&right_encoder{
+    a-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    steps = <3>;
+    status = "okay";
+};
 
+&sensors {
+    triggers-per-rotation = <1>;
+};
+
+/ {
     anin0: analog_input_0 {
         compatible = "zmk,analog-input";
         sampling-hz = <100>;
@@ -70,13 +73,4 @@
             reg = <2>;
         };
     };
-};
-
-&sensors {
-    triggers-per-rotation = <2>;
-};
-
-&right_encoder {
-    status = "okay";
-    resolution = <1>;
 };
