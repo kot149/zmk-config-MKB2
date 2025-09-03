@@ -37,9 +37,9 @@ layers:
   - {t: PERIOD, s: QUESTION}
   - {t: SLASH, h: LEFT SHIFT}
   - ''
+  - ''
   - LCTRL
-  - LEFT WIN
-  - LALT
+  - LWIN
   - {t: '&eager_tap_dance_lang1 LANG2', h: '&mo_exit_alttab 3'}
   - {t: SPACE, h: '&mo_exit_alttab 4'}
   - {t: BACKSPACE, h: '&mo_exit_alttab 4'}
