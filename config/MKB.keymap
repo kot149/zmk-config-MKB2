@@ -56,7 +56,6 @@
     excluded-positions = <
         19 // J
         20 // K
-        21 // L
         22 // ;
         12 13 36 // Ctrl
         24 25 // Shift, Z
@@ -445,12 +444,23 @@
 
         /omit-if-no-ref/
 
-        td_right_click: td_right_click {
+        td_rclick_close_tab: td_rclick_close_tab {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mkp RCLK>, <&kp LC(W)>;
 
             tapping-term-ms = <250>;
+        };
+
+        /omit-if-no-ref/
+
+        td_rclick_close_tab_mouse_gesture: td_rclick_close_tab_mouse_gesture {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mouse_gesture>, <&td_rclick_close_tab>;
+
+            tapping-term-ms = <150>;
+            flavor = "balanced";
         };
 
         /omit-if-no-ref/
@@ -724,7 +734,7 @@
 &kp LS(TAB)  &kp LANG2                         &kp LANG1         &kp LANG1  &kp TAB                                                                          &kp LC(LG(LEFT))         &to_kp 5 TAB            &none                &kp DOWN              &kp LC(LG(RIGHT))
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp PG_UP PG_DN>;
         };
 
         LANG1_EAGER_TAP_DANCE {
@@ -824,7 +834,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans           &trans          &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &td_right_click  &mouse_gesture  &mo 12  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &td_rclick_close_tab_mouse_gesture 0 0  &none  &mo 12  &none
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans           &trans          &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans  &trans                     &trans          &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans    &trans           &trans          &trans  &trans
