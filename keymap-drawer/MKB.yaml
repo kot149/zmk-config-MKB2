@@ -151,9 +151,9 @@ layers:
   - RIGHT
   - Ctl+RIGHT
   - ''
+  - {t: ▽, type: trans}
   - {t: COMMA, h: LCTRL}
-  - {t: COMMA, h: LEFT WIN}
-  - {t: PERIOD, h: LEFT ALT}
+  - {t: PERIOD, h: LEFT WIN}
   - {t: ▽, type: trans}
   - ENTER
   - DELETE
@@ -743,7 +743,7 @@ layers:
   - {t: ▽, type: trans}
   '13':
   - ''
-  - Boot
+  - {t: '&td_reset', h: Boot}
   - Reset
   - ''
   - ''
@@ -752,7 +752,7 @@ layers:
   - ''
   - OUT TOG
   - Reset
-  - Boot
+  - {t: '&td_reset', h: Boot}
   - ''
   - ''
   - ''
