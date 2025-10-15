@@ -48,9 +48,9 @@ layers:
   - {t: ESCAPE, h: '12'}
   - ''
   - Sft+TAB
-  - LANG2
-  - LANG1
-  - LANG1
+  - PG UP
+  - ''
+  - PAGE DOWN
   - TAB
   - Ctl+Gui+LEFT
   - '&to_kp 5 TAB'
