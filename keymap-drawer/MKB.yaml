@@ -116,8 +116,8 @@ layers:
   - {t: ▽, type: trans}
   '2':
   - {t: ▽, type: trans}
-  - PLUS
-  - '7'
+  - {t: PLUS, h: LWIN}
+  - {t: '7', h: LALT}
   - '8'
   - '9'
   - MINUS
