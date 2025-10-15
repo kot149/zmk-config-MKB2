@@ -720,6 +720,27 @@
 
             tapping-term-ms = <250>;
         };
+
+        /omit-if-no-ref/
+
+        td_reset: td_reset {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&none>, <&sys_reset>;
+
+            tapping-term-ms = <300>;
+        };
+
+        /omit-if-no-ref/
+
+        reset_bootloader: reset_bootloader {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&bootloader>, <&td_reset>;
+
+            tapping-term-ms = <500>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -749,10 +770,10 @@
 
         NUMPAD_AND_ARROWS {
             bindings = <
-&trans           &kp PLUS                   &kp N7               &kp N8  &kp N9     &kp MINUS        &td_alt_f4    &kp LC(HOME)  &trans        &kp LC(END)  &to_kp 5 TAB   &none
-&trans           &mt LEFT_CONTROL ASTERISK  &kp N4               &kp N5  &kp N6     &kp SLASH        &kp F5        &kp HOME      &kp UP_ARROW  &kp END      &to_kp 6 TAB   &none
-&trans           &mt LEFT_SHIFT N0          &kp N1               &kp N2  &kp N3     &kp PERCENT      &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT    &kp LC(RIGHT)  &none
-&mt LCTRL COMMA  &mt LEFT_WIN COMMA         &mt LEFT_ALT PERIOD          &trans     &kp ENTER         &kp DELETE    &trans                      &trans       &trans         &trans
+&trans  &kp PLUS                   &kp N7               &kp N8  &kp N9     &kp MINUS        &td_alt_f4    &kp LC(HOME)  &trans        &kp LC(END)  &to_kp 5 TAB   &none
+&trans  &mt LEFT_CONTROL ASTERISK  &kp N4               &kp N5  &kp N6     &kp SLASH        &kp F5        &kp HOME      &kp UP_ARROW  &kp END      &to_kp 6 TAB   &none
+&trans  &mt LEFT_SHIFT N0          &kp N1               &kp N2  &kp N3     &kp PERCENT      &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT    &kp LC(RIGHT)  &none
+&trans  &mt LCTRL COMMA         &mt LEFT_WIN PERIOD          &trans     &kp ENTER         &kp DELETE    &trans                      &trans       &trans         &trans
 &trans           &trans                     &trans               &trans  &trans                                    &trans        &trans        &trans       &trans         &trans
             >;
 
@@ -863,7 +884,7 @@
 
         CONFIGURATION {
             bindings = <
-&none   &bootloader  &sys_reset  &none   &none   &tog_ls          &none         &none         &out OUT_TOG  &sys_reset      &bootloader       &none
+&none   &reset_bootloader 0 0  &sys_reset  &none   &none   &tog_ls          &none         &none         &out OUT_TOG  &sys_reset      &reset_bootloader 0 0       &none
 &none   &none        &none       &none   &none   &tog_ls_on       &ind_con      &ind_bat      &none         &windows_sleep  &none             &none
 &none   &none        &none       &none   &none   &tog_ls_off      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4      &td_bt_clear
 &none   &none        &none               &none   &none            &none         &none                       &none           &td_bt_clear_all  &none
