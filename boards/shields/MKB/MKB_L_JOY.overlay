@@ -45,19 +45,10 @@
             input-code = <INPUT_REL_Y>;
         };
     };
-    
-    analog_input_listener {
+
+    joystick_listener: analog_input_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&anin0>;
-        
-        layer0 {
-            layers = <0>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
-        };
-        layer1 {
-            layers = <1>;
-            input-processors = <&zip_xy_scaler 1 16>;
-        };
     };
 };

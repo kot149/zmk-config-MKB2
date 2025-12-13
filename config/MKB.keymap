@@ -157,6 +157,23 @@
     };
 };
 
+&joystick_listener {
+    input-processors = <
+        &zip_xy_scaler 2 1
+        &zip_xy_to_scroll_mapper
+        &zip_report_rate_limit 15
+    >;
+
+    layer1 {
+        layers = <NUMPAD_AND_ARROWS>;
+        input-processors = <
+            &zip_xy_scaler 4 1
+            &zip_xy_to_scroll_mapper
+            &zip_report_rate_limit 15
+        >;
+    };
+};
+
 / {
     input_processors {
         wheel_x_scaler: wheel_x_scaler {
