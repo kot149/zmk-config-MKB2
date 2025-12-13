@@ -46,6 +46,10 @@
     flavor = "balanced";
 };
 
+&to { /delete-property/ locking; };
+
+&tog { /delete-property/ locking; };
+
 &sk { release-after-ms = <700>; };
 
 &sl { release-after-ms = <1000>; };
@@ -752,6 +756,7 @@
 &none        &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C          &kp V                              &kp B                        &kp N                        &kp M                    &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH  &none
 &none        &kp LCTRL                         &kp LWIN                         &lt_eager_tap_dance_lang1 3 LANG2  &lt_exit_alttab 4 SPACE      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                          &kp LALT             &lt 12 ESCAPE         &none
 &kp LS(TAB)  &kp PG_UP                         &none             &kp PAGE_DOWN  &kp TAB                                                                                      &kp LC(LG(LEFT))         &to_kp 5 TAB            &none                &kp DOWN              &kp LC(LG(RIGHT))
+&none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp PG_UP PG_DN>;
@@ -764,6 +769,7 @@
 &trans  &trans  &trans  &trans  &trans                             &trans      &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans  &trans          &lt_eager_tap_dance_lang1 3 LANG1  &trans      &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                                                 &trans  &trans  &trans  &trans  &trans
+&none        &none
             >;
         };
 
@@ -774,6 +780,7 @@
 &trans  &mt LEFT_SHIFT N0          &kp N1               &kp N2  &kp N3  &kp PERCENT      &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT    &kp LC(RIGHT)  &none
 &trans  &mt LCTRL COMMA            &mt LEFT_WIN PERIOD          &trans  &kp ENTER        &kp DELETE    &trans                      &trans       &trans         &trans
 &trans  &trans                     &trans               &trans  &trans                                 &trans        &trans        &trans       &trans         &trans
+&none        &none
             >;
 
             sensor-bindings = <&encoder_zoom>;
@@ -786,6 +793,7 @@
 &trans     &trans        &kp F9        &kp F10  &kp F11  &kp F12         &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &kp PIPE    &none
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT           &trans   &trans          &kp LESS_THAN  &kp GREATER_THAN                             &trans             &kp DOLLAR  &trans
 &trans     &trans        &trans        &trans   &trans                                  &trans                &trans                 &trans             &trans      &trans
+&none        &none
             >;
         };
 
@@ -796,6 +804,7 @@
 &trans  &kp LA(LC(LG(DOWN)))  &kp LG(LEFT_ARROW)      &kp LG(DOWN)      &kp LG(RIGHT_ARROW)      &screenshot_copy      &kp K_MUTE  &kp LA(LEFT)              &kp DOWN               &kp LA(RIGHT)      &trans        &none
 &trans  &trans                &trans                                    &trans                   &trans                &kp DELETE  &trans                                           &trans             &trans        &trans
 &trans  &trans                &trans                  &trans            &trans                                                     &trans                    &trans                 &trans             &trans        &trans
+&none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -808,6 +817,7 @@
 &trans       &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT       &trans          &none
 &trans       &trans       &trans              &trans     &trans      &trans  &trans              &trans          &trans          &trans
 &trans       &trans       &trans    &trans    &trans                         &kp LEFT  &kp UP    &kp_to ENTER 0  &kp_to ENTER 0  &kp RIGHT
+&none        &none
             >;
         };
 
@@ -818,6 +828,7 @@
 &kp LS(TAB)  &kp LS(TAB)  &kp LEFT  &kp DOWN  &kp RIGHT  &trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(TAB)  &kp LS(TAB)
 &trans       &trans       &trans              &trans     &trans      &trans  &trans              &trans     &trans       &trans
 &trans       &trans       &trans    &trans    &trans                         &trans    &trans    &trans     &trans       &trans
+&none        &none
             >;
         };
 
@@ -828,6 +839,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&none        &none
             >;
         };
 
@@ -838,6 +850,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&none        &none
             >;
         };
 
@@ -848,6 +861,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&none        &none
             >;
         };
 
@@ -858,6 +872,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans                                  &trans  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans  &trans                                            &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans    &trans                                  &trans  &trans  &trans
+&none        &none
             >;
         };
 
@@ -868,6 +883,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans             &kp LS(LA(LC(M)))  &trans           &trans  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans             &trans                              &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                                 &trans             &trans           &trans  &trans  &trans
+&none        &none
             >;
         };
 
@@ -878,6 +894,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F21  &kp F22  &kp F23  &kp F24  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans   &trans            &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans                       &trans   &trans   &trans   &trans  &trans
+&none        &none
             >;
         };
 
@@ -888,6 +905,7 @@
 &none   &none                  &none       &none   &none   &tog_ls_off      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4           &td_bt_clear
 &none   &none                  &none               &none   &none            &none         &none                       &none           &td_bt_clear_all       &none
 &trans  &trans                 &trans      &trans  &trans                                 &trans        &trans        &trans          &trans                 &trans
+&none        &none
             >;
         };
     };

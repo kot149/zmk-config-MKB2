@@ -23,11 +23,19 @@ layers:
   - J
   - K
   - L
+<<<<<<< HEAD
   - {t: MINUS, h: '12'}
   - ''
   - ''
   - {t: '&kp_exit_AML Z', h: LEFT SHIFT}
   - {t: X, h: LEFT SHIFT}
+=======
+  - SEMI
+  - SQT
+  - LSHFT
+  - Z
+  - X
+>>>>>>> upstream/main
   - C
   - V
   - B
@@ -49,12 +57,35 @@ layers:
   - ''
   - Sft+TAB
   - PG UP
+<<<<<<< HEAD
   - ''
   - PAGE DOWN
   - TAB
   - Ctl+Gui+LEFT
   - '&to_kp 5 TAB'
   - ''
+=======
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  Fnc:
+  - GRAVE
+  - PG UP
+  - UP
+  - PG DN
+  - HOME
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - '&tog_ls'
+  - LEFT
+>>>>>>> upstream/main
   - DOWN
   - Ctl+Gui+RIGHT
   '1':
@@ -67,6 +98,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+<<<<<<< HEAD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -129,6 +161,25 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ASTERISK, h: LEFT CONTROL}
+=======
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  Num:
+  - CAPS
+  - '1'
+  - '2'
+  - '3'
+>>>>>>> upstream/main
   - '4'
   - '5'
   - '6'
@@ -372,6 +423,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
+<<<<<<< HEAD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
@@ -379,6 +431,16 @@ layers:
   - RIGHT
   - Sft+TAB
   - Sft+TAB
+=======
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  Mouse:
+>>>>>>> upstream/main
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -606,7 +668,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+<<<<<<< HEAD
   - ''
+=======
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  Scr:
+>>>>>>> upstream/main
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -732,6 +810,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+<<<<<<< HEAD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -772,6 +851,22 @@ layers:
   - ''
   - ''
   - '&tog_ls_off'
+=======
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  BT:
+  - BT CLR
+>>>>>>> upstream/main
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -798,6 +893,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+<<<<<<< HEAD
 combos:
 - p: [1, 2]
   k: EQUAL
@@ -826,3 +922,40 @@ combos:
 - p: [25, 26]
   k: Ctl+Z
   l: ['0']
+=======
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+>>>>>>> upstream/main

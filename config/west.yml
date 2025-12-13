@@ -19,7 +19,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: abb64ba
       import: app/west.yml
 
     # https://github.com/caksoylar/zmk-rgbled-widget
@@ -31,7 +31,7 @@ manifest:
     # https://github.com/badjeff/zmk-pmw3610-driver
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main
+      revision: zmk-0.4
       path: modules/zmk-pmw3610-driver-badjeff
 
     # https://github.com/badjeff/zmk-analog-input-driver
