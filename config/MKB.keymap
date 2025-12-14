@@ -166,15 +166,6 @@
     acceleration-exponent = <2>;
 };
 
-&joystick_listener {
-    input-processors = <
-        &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
-        &pointer_accel
-        &zip_xy_to_scroll_mapper
-        &zip_report_rate_limit 15
-    >;
-};
-
 / {
     input_processors {
         wheel_x_scaler: wheel_x_scaler {

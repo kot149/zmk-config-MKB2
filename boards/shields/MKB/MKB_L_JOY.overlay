@@ -2,6 +2,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/keys.h>
+#include <input/processors/report_rate_limit.dtsi>
 
 &adc {
 	status = "okay";
@@ -50,5 +51,12 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&anin0>;
+
+        input-processors = <
+            &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
+            &pointer_accel
+            &zip_xy_to_scroll_mapper
+            &zip_report_rate_limit 15
+        >;
     };
 };
