@@ -17,9 +17,11 @@ manifest:
     - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
+    # https://github.com/zmkfirmware/zmk
     - name: zmk
-      remote: zmkfirmware
-      revision: abb64ba
+      # remote: zmkfirmware
+      remote: kot149
+      revision: v0.3-branch-patch-adc-oversampling
       import: app/west.yml
 
     # https://github.com/caksoylar/zmk-rgbled-widget
