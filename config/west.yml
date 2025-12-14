@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: ssbb
       url-base: https://github.com/ssbb
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
     - name: te9no
       url-base: https://github.com/te9no
     - name: kot149
@@ -60,9 +62,17 @@ manifest:
     #   revision: main
     #   path: modules/zmk-driver-tlx493d-2-te9no
 
+    # https://github.com/te9no/zmk-driver-LIS3MDLTR
     # - name: zmk-driver-LIS3MDLTR
     #   remote: te9no
     #   revision: main
+    #   path: modules/zmk-driver-LIS3MDLTR
+
+    # https://github.com/te9no/zmk-driver-MLX90393
+    - name: zmk-driver-MLX90393
+      remote: te9no
+      revision: main
+      path: modules/zmk-driver-MLX90393
 
     # https://github.com/badjeff/zmk-input-processor-report-rate-limit
     - name: zmk-input-processor-report-rate-limit
@@ -75,6 +85,12 @@ manifest:
       remote: ssbb
       revision: v1
       path: modules/zmk-listeners
+
+    # https://github.com/oleksandrmaslov/zmk-pointing-acceleration
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
+      revision: main
+      path: modules/zmk-pointing-acceleration
 
     # https://github.com/kot149/zmk-mouse-gesture
     - name: zmk-mouse-gesture
@@ -94,18 +110,17 @@ manifest:
       revision: v1
       path: modules/zmk-scroll-snap
 
+    # https://github.com/te9no/zmk-input-processor-keybind
     - name: zmk-input-processor-keybind
       remote: te9no
       revision: main
-      path: modules/zmk-input-processor-keybind-te9no
+      path: modules/zmk-input-processor-keybind
+
+    # https://github.com/petejohanson/cirque-input-module
     - name: cirque-input-module
       remote: petejohanson
       revision: main
       path: modules/cirque-input-module
-    - name: zmk-driver-MLX90393
-      remote: te9no
-      revision: main
-      path: modules/zmk-driver-MLX90393
 
   self:
     path: config
