@@ -27,13 +27,10 @@
 #define MISC 4
 #define ALT_TAB 5
 #define CTRL_TAB 6
-#define CTRL_ALT_TAB_TB 7
-#define ALT_TAB_TB 8
-#define CTRL_TAB_TB 9
-#define MOUSE 10
-#define MEDIA 11
-#define EXTRA_FINCTIONS 12
-#define CONFIGURATION 13
+#define MOUSE 7
+#define MEDIA 8
+#define EXTRA_FINCTIONS 9
+#define CONFIGURATION 10
 
 &mt {
     tapping-term-ms = <200>;
@@ -60,6 +57,7 @@
     excluded-positions = <
         19 // J
         20 // K
+        21 // L
         22 // ;
         12 13 36 // Ctrl
         24 25 // Shift, Z
@@ -192,12 +190,12 @@
         compatible = "zmk,layer-listeners";
 
         release_alt {
-            layers = <ALT_TAB ALT_TAB_TB>;
+            layers = <ALT_TAB>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
         };
 
         release_ctrl {
-            layers = <CTRL_TAB CTRL_TAB_TB>;
+            layers = <CTRL_TAB>;
             bindings = <&kt_on LCTRL &kt_off LCTRL>;
         };
 
@@ -229,13 +227,13 @@
         middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <19 20>;
-            layers = <10>;
+            layers = <7>;
         };
 
         shift_middle_click {
             bindings = <&mkp_with_mod LEFT_SHIFT MCLK>;
             key-positions = <20 21>;
-            layers = <10>;
+            layers = <7>;
         };
 
         Escape {
@@ -281,7 +279,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&tog_off 10>;
+            bindings = <&tog_off 7>;
         };
 
         /omit-if-no-ref/
@@ -323,7 +321,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 10>;
+                <&sl 7>;
         };
 
         /omit-if-no-ref/
@@ -360,7 +358,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&tog_off ALT_TAB &tog_off CTRL_TAB>;
+                <&tog_off 5 &tog_off 6>;
         };
 
         /omit-if-no-ref/
@@ -424,7 +422,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&exit_AML &sl_250 LANG1_EAGER_TAP_DANCE>;
+                <&exit_AML &sl_250 1>;
         };
     };
 
@@ -771,12 +769,12 @@
 
         DEFAULT {
             bindings = <
-&none        &mt LWIN Q                        &mt LALT W        &kp E          &kp R                              &lt 13 T                     &lt 13 Y                     &kp U                    &kp I                   &kp O                &lt 11 P              &none
-&none        &mt LCTRL A                       &kp S             &kp D          &kp F                              &kp G                        &kp H                        &kp J                    &kp K                   &kp L                &lt 12 MINUS          &none
+&none        &mt LWIN Q                        &mt LALT W        &kp E          &kp R                              &lt 10 T                     &lt 10 Y                     &kp U                    &kp I                   &kp O                &lt 8 P               &none
+&none        &mt LCTRL A                       &kp S             &kp D          &kp F                              &kp G                        &kp H                        &kp J                    &kp K                   &kp L                &lt 9 MINUS           &none
 &none        &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C          &kp V                              &kp B                        &kp N                        &kp M                    &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH  &none
-&none        &kp LCTRL                         &kp LWIN                         &lt_eager_tap_dance_lang1 3 LANG2  &lt_exit_alttab 4 SPACE      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                          &kp LALT             &lt 12 ESCAPE         &none
+&none        &kp LCTRL                         &kp LWIN                         &lt_eager_tap_dance_lang1 3 LANG2  &lt_exit_alttab 4 SPACE      &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER                          &kp LALT             &lt 9 ESCAPE          &none
 &kp LS(TAB)  &kp PG_UP                         &none             &kp PAGE_DOWN  &kp TAB                                                                                      &kp LC(LG(LEFT))         &to_kp 5 TAB            &none                &kp DOWN              &kp LC(LG(RIGHT))
-&none        &none
+                                                                 &none                                                                                                                                &none
             >;
 
             sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp PG_UP PG_DN>;
@@ -789,7 +787,7 @@
 &trans  &trans  &trans  &trans  &trans                             &trans      &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans  &trans          &lt_eager_tap_dance_lang1 3 LANG1  &trans      &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                                                 &trans  &trans  &trans  &trans  &trans
-&none        &none
+                        &none                                                                  &none
             >;
         };
 
@@ -800,7 +798,7 @@
 &trans  &mt LEFT_SHIFT N0          &kp N1               &kp N2  &kp N3  &kp PERCENT      &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT    &kp LC(RIGHT)  &none
 &trans  &mt LCTRL COMMA            &mt LEFT_WIN PERIOD          &trans  &kp ENTER        &kp DELETE    &trans                      &trans       &trans         &trans
 &trans  &trans                     &trans               &trans  &trans                                 &trans        &trans        &trans       &trans         &trans
-&none        &none
+                                                        &none                                                        &none
             >;
 
             sensor-bindings = <&encoder_zoom>;
@@ -813,7 +811,7 @@
 &trans     &trans        &kp F9        &kp F10  &kp F11  &kp F12         &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &kp PIPE    &none
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT           &trans   &trans          &kp LESS_THAN  &kp GREATER_THAN                             &trans             &kp DOLLAR  &trans
 &trans     &trans        &trans        &trans   &trans                                  &trans                &trans                 &trans             &trans      &trans
-&none        &none
+                                       &none                                                                  &none
             >;
         };
 
@@ -824,7 +822,7 @@
 &trans  &kp LA(LC(LG(DOWN)))  &kp LG(LEFT_ARROW)      &kp LG(DOWN)      &kp LG(RIGHT_ARROW)      &screenshot_copy      &kp K_MUTE  &kp LA(LEFT)              &kp DOWN               &kp LA(RIGHT)      &trans        &none
 &trans  &trans                &trans                                    &trans                   &trans                &kp DELETE  &trans                                           &trans             &trans        &trans
 &trans  &trans                &trans                  &trans            &trans                                                     &trans                    &trans                 &trans             &trans        &trans
-&none        &none
+                                                      &none                                                                                                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -837,7 +835,7 @@
 &trans       &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT       &trans          &none
 &trans       &trans       &trans              &trans     &trans      &trans  &trans              &trans          &trans          &trans
 &trans       &trans       &trans    &trans    &trans                         &kp LEFT  &kp UP    &kp_to ENTER 0  &kp_to ENTER 0  &kp RIGHT
-&none        &none
+                                    &none                                              &none
             >;
         };
 
@@ -848,51 +846,18 @@
 &kp LS(TAB)  &kp LS(TAB)  &kp LEFT  &kp DOWN  &kp RIGHT  &trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(TAB)  &kp LS(TAB)
 &trans       &trans       &trans              &trans     &trans      &trans  &trans              &trans     &trans       &trans
 &trans       &trans       &trans    &trans    &trans                         &trans    &trans    &trans     &trans       &trans
-&none        &none
-            >;
-        };
-
-        CTRL_ALT_TAB_TB {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&none        &none
-            >;
-        };
-
-        ALT_TAB_TB {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&none        &none
-            >;
-        };
-
-        CTRL_TAB_TB {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&none        &none
+                                    &none                                              &none
             >;
         };
 
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans                                  &trans  &trans  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &td_rclick_close_tab_mouse_gesture 0 0  &none   &mo 12  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &td_rclick_close_tab_mouse_gesture 0 0  &none   &mo 9   &none
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans                                  &trans  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans  &trans                                            &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans    &trans                                  &trans  &trans  &trans
-&none        &none
+                        &none                                         &none
             >;
         };
 
@@ -903,7 +868,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans             &kp LS(LA(LC(M)))  &trans           &trans  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans             &trans                              &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                                 &trans             &trans           &trans  &trans  &trans
-&none        &none
+                        &none                                                             &none
             >;
         };
 
@@ -914,7 +879,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F21  &kp F22  &kp F23  &kp F24  &trans  &none
 &trans  &trans  &trans          &trans  &trans      &trans   &trans            &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans                       &trans   &trans   &trans   &trans  &trans
-&none        &none
+                        &none                                         &none
             >;
         };
 
@@ -925,7 +890,7 @@
 &none   &none                  &none       &none   &none   &tog_ls_off      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4           &td_bt_clear
 &none   &none                  &none               &none   &none            &none         &none                       &none           &td_bt_clear_all       &none
 &trans  &trans                 &trans      &trans  &trans                                 &trans        &trans        &trans          &trans                 &trans
-&none        &none
+                                           &none                                                        &none
             >;
         };
     };
